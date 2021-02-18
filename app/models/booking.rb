@@ -1,5 +1,5 @@
 class Booking < ApplicationRecord
-  STATUS = [ "free", "booked" ]
+  STATUS = [ "Free", "Booked" ]
 
   validates :status, :start_date, :end_date, presence: true
   validates :status, inclusion: { in: STATUS, message: "Not a valid booking status" }

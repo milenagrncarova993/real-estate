@@ -5,6 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require "open-uri"
+
+
 
 puts 'Cleaning database now...'
 Booking.destroy_all
@@ -24,14 +27,15 @@ user_owner.save!
 
 property_array = []
 
+
 p = Property.new
 p.address = "Wedekind Strasse 23"
 p.size = "50m2"
 p.year = 1990
 p.rooms = 2
 p.price = 1000
-p.type = "appartment"
-p.state = "simple"
+p.type = "House"
+p.state = "Simple"
 p.user = user_owner
 p.save 
 
