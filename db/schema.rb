@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(version: 2021_02_18_165956) do
     t.integer "year"
     t.integer "rooms"
     t.integer "price"
-    t.string "type"
+    t.string "type_of_property"
     t.string "state"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
