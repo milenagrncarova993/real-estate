@@ -1,0 +1,21 @@
+<%= simple_form_for(@property) do |f| %>
+
+
+  <div class="form-inputs mb-3">
+    <%= f.input :address %>
+    <%= f.input :size %>
+    <%= f.input :year %>
+    <%= f.input :rooms %>
+    <%= f.input :price %>
+    <%= f.input :state, as: :select, collection: Property::CATEGORY2 %>
+    <%= f.input :type_of_property, as: :select, collection: Property::CATEGORY1 %>
+  </div>
+
+  <div class="form-photos">
+    <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+  </div>
+
+  <div class="btn btn-success">
+    <%= f.button :submit %>
+  </div>
+<% end %>
