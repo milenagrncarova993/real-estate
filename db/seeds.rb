@@ -34,7 +34,7 @@ p.size = "50m2"
 p.year = 1990
 p.rooms = 2
 p.price = 1000
-p.type = "House"
+p.type_of_property = "House"
 p.state = "Simple"
 p.user = user_owner
 p.save 
