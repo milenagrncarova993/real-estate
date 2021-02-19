@@ -7,14 +7,14 @@
     <% end %>
   </div>
   <div class="info">
-    <p><%=@property.address %></p>
+    <p><i class="fa fa-map-marker" aria-hidden="true"></i> <%=@property.address %></p>
     <p><%= @property.size %></p>
     <p><%= @property.year %></p>
-    <p><%= @property.rooms %></p>
-    <p><%= @property.price %></p>
+    <p><i class="fa fa-bed" aria-hidden="true"></i> <%= @property.rooms %></p>
+    <p><i class="fa fa-usd" aria-hidden="true"></i> <%= @property.price %></p>
     <p><%= @property.state%></p>
     <p><%= @property.type_of_property%>
-    <%= link_to 'Delete ' , properties_path(@property), method: :delete, class:"btn btn-light"%>
+    <p><%= link_to 'Delete' , properties_path(@property), method: :delete, class:"btn btn-light"%><p>
   </div>
   </div>
       <%= link_to "Back to the list", properties_path %>
