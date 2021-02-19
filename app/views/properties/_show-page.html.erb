@@ -1,19 +1,22 @@
-  <div class="list-group">
-    <div class="picture">
-      <% if @property.photos.attached?%>
-        <%= cl_image_tag @property.photo.key, height: 500, width: 400, crop: :fill %>
-      <% end %>
-    </div>
-    <div class="info">
-      <%=@property.address %>
-      <%= @property.size %>
-      <%= @property.year %>
-      <%= @property.rooms %>
-      <%= @property.price %>
-      <%= @property.state%>
-      <%= @property.type_of_property%>
-      <%= link_to 'Delete ' , properties_path(@property), method: :delete, class:"btn btn-light"%>
-    </div>
-    </div>
-        <%= link_to "Back to the list", properties_path %>
-    </div>
+<div class="list-group">
+  <div class="picture">
+    <% if @property.photos.attached?%>
+      <%= cl_image_tag @property.photo.key, height: 500, width: 400, crop: :fill %>
+      <% else %>
+      <%= image_tag "placeholder.jpg" %>
+    <% end %>
+  </div>
+  <div class="info">
+    <p><%=@property.address %></p>
+    <p><%= @property.size %></p>
+    <p><%= @property.year %></p>
+    <p><%= @property.rooms %></p>
+    <p><%= @property.price %></p>
+    <p><%= @property.state%></p>
+    <p><%= @property.type_of_property%>
+    <%= link_to 'Delete ' , properties_path(@property), method: :delete, class:"btn btn-light"%>
+  </div>
+  </div>
+      <%= link_to "Back to the list", properties_path %>
+  </div>
+</div>

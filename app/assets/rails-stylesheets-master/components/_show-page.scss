@@ -1,0 +1,21 @@
+.list-group{
+    display: flex;
+
+}
+
+.picture{
+    float:left;
+    width:50%;
+    img{
+        width:500px;
+        height:400px;
+    }
+}
+
+.info{
+    float:right;
+    width:50%;
+    padding: 30px;
+    font-weight: bold;
+    background: white;
+}
