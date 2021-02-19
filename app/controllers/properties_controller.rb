@@ -14,6 +14,7 @@ class PropertiesController < ApplicationController
     
   def create
     @property = Property.new(property_params)
+    @property .user = current_user
     @property.save
     redirect_to properties_path(@property)
   end
