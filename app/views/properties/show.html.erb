@@ -1,11 +1,3 @@
-<li><%= @property.address %></li>
-<li><%= @property.size %></li>
-<li><%= @property.year %></li>
-<li><%= @property.rooms %></li>
-<li><%= @property.price %></li>
-<li><%= @property.state%></li>
-<li><%= @property.type_of_property%></li>
-
-<% @property.photos.each do |photo| %>
-  <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
-<% end %>
+<div class="container mt-5 mb-5">
+  <%= render 'show-page', property: @property %>
+</div>
