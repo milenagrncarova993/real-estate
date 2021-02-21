@@ -1,0 +1,70 @@
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.single-featured-property{
+    position: relative;
+    z-index: 1;
+    transition-duration: 500ms;
+    overflow:hidden;
+}
+.property-thumb{
+    position: relative;
+    z-index:1;
+}
+.property-thumb img {
+    width:500px;
+    height:400px;
+}
+
+.single-featured-property .property-thumb .tag span{
+    height: 35px;
+    padding: 0px 20px;
+    background-color: rgb(148, 112, 84);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 35px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    transition-duration: 500ms;
+}
+.single-featured-property .property-thumb .list-price p {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    color: rgb(148, 112, 84);
+    font-size: 24px;
+    font-weight: 600;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10;
+    margin-bottom: 0px;
+    line-height: 1;
+    transition-duration: 500ms;
+}
+
+.single-featured-property .property-content {
+    padding: 30px;
+    border: 1px solid rgb(225, 221, 221);
+}
+.single-featured-property .property-content h5 {
+    font-size: 18px;
+}
+
+.single-featured-property .property-content .location {
+    color: rgb(148, 112, 84);
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.single-featured-property .property-content p {
+    margin-bottom: 30px;
+}
