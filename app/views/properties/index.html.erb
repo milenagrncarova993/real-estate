@@ -1,6 +1,6 @@
 
-<div class="col-12 col-md-6 col-xl-4">
-  <div class="single-featured-property mb-50">  
+<div class="cards">
+  <div class="single-featured-property ">  
     <% @properties.each do |property| %>
 
     <div class="property-thumb">
@@ -15,31 +15,29 @@
       <div class="list-price">
         <p><%= property.price %></p>
       </div>
-    </div>
-
-    <div class="property-content">
-      <h5>Villa in </h5>
-      <p class="location"><img src="imgages/icons/location.png" alt=""><%= property.address %></p>
-      <p>Integer nec bibendum lacus. Suspendisse dictum enim sit amet libero malesuada.</p>
-      <div class="property-meta-data d-flex align-items-end justify-content-between">
-        <div class="new-tag">
-          <img src="imgages/icons/new.png" alt="">
-        </div>
-        <div class="bathroom">
-          <img src="imgages/icons/bathtub.png" alt="">
-          <span><%= property.rooms %></span>
-        </div>
-        <div class="garage">
-          <img src="imgages/icons/garage.png" alt="">
-          <span><%= property.rooms %></span>
-        </div>
-        <div class="space">
-          <img src="imgages/icons/space.png" alt="">
-          <span><%= property.size %></span>
+      <div class="property-content">
+        <h5>Villa in </h5>
+        <p class="location"><img src="icons/location.png" alt=""><%= property.address %></p>
+        <p>Integer nec bibendum lacus. Suspendisse dictum enim sit amet libero malesuada.</p>
+        <div class="property-meta-data d-flex align-items-end justify-content-between">
+          <div class="new-tag">
+            <img src="icons/new.png" alt="">
+          </div>
+          <div class="bathroom">
+            <img src="icons/bathtub.png" alt="">
+            <span><%= property.rooms %></span>
+          </div>
+          <div class="garage">
+            <img src="icons/garage.png" alt="">
+            <span><%= property.rooms %></span>
+          </div>
+          <div class="space">
+            <img src="icons/space.png" alt="">
+            <span><%= property.size %></span>
+          </div>
         </div>
       </div>
-    </div>
+            </div>
+      <% end %>
   </div>
 </div>
-  <% end %>
-            

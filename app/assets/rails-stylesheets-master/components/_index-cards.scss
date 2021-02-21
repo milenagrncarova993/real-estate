@@ -1,6 +1,8 @@
-.col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    margin:50px;
 }
 
 .single-featured-property{
@@ -68,3 +70,55 @@
 .single-featured-property .property-content p {
     margin-bottom: 30px;
 }
+
+@media only screen and (max-width: 767px){
+.single-featured-property .property-content .property-meta-data img {
+    margin-right: 0px;
+}
+}
+
+.single-featured-property .property-content .property-meta-data span {
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 5px;
+    color: rgb(131, 131, 131);
+}
+.single-featured-property .property-content {
+    padding: 30px;
+    border: 1px solid rgb(225, 221, 221);
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    .cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    .cards {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    .cards {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
