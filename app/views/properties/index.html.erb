@@ -1,11 +1,10 @@
 
-<div class="cards">
-  <div class="single-featured-property ">  
+<div class="cards"> 
     <% @properties.each do |property| %>
-
+    <div class="single-featured-property "> 
     <div class="property-thumb">
       <% if property.photos.attached?%>
-        <%= cl_image_tag property.photos.first.key, height: 500, width: 400, crop: :fill %>
+        <%= cl_image_tag property.photos.first.key, crop: :fill %>
         <% else %>
         <%= image_tag "placeholder.jpg" %>
       <% end %>
@@ -16,6 +15,7 @@
         <p><%= property.price %></p>
       </div>
     </div>
+
       <div class="property-content">
         <h5>Property in </h5>
         <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> <%= property.address %></p>
@@ -39,6 +39,6 @@
           </div>
         </div>
       </div>
+        </div>
       <% end %>
-  </div>
 </div>

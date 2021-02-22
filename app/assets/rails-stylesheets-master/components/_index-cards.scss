@@ -1,23 +1,24 @@
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 16px;
+    grid-gap: 50px;
     margin:50px;
+    padding:100px;
 }
 
 .single-featured-property{
-    position: relative;
-    z-index: 1;
-    transition-duration: 500ms;
-    overflow:hidden;
+  position: relative;
+  z-index: 1;
+  transition-duration: 500ms;
+  overflow: hidden;
 }
 .property-thumb{
     position: relative;
-    z-index:1;
+
 }
 .property-thumb img {
-    width:500px;
-    height:400px;
+  height: auto;
+  max-width: 100%;
 }
 
 .single-featured-property .property-thumb .tag span{
@@ -112,13 +113,13 @@
   // Large devices (desktops, 992px and up)
   @media (min-width: 992px) {
     .cards {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
     }
   }
   
   // Extra large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) {
     .cards {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr ;
     }
   }
