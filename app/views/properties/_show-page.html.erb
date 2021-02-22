@@ -1,7 +1,7 @@
 <div class="list-group">
   <div class="picture">
     <% if @property.photos.attached?%>
-      <%= cl_image_tag @property.photo.key, height: 500, width: 400, crop: :fill %>
+      <%= cl_image_tag @property.photos.first.key, height: 500, width: 400, crop: :fill %>
       <% else %>
       <%= image_tag "placeholder.jpg" %>
     <% end %>
