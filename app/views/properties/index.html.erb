@@ -10,6 +10,7 @@
       <% end %>
       <div class="tag">
         <span>For Sale</span>
+        <%= link_to "X", property_path(property) , method: :delete %>
       </div>
       <div class="list-price">
         <p><%= property.price %></p>
