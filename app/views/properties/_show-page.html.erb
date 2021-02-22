@@ -14,7 +14,7 @@
     <p><i class="fa fa-usd" aria-hidden="true"></i> <%= @property.price %></p>
     <p><%= @property.state%></p>
     <p><%= @property.type_of_property%>
-    <p><%= link_to 'Delete' , properties_path(@property), method: :delete, class:"btn btn-light"%><p>
+    <p><%= link_to 'Delete' , property_path(property), method: :delete, class:"btn btn-light"%><p>
   </div>
   </div>
       <%= link_to "Back to the list", properties_path %>
