@@ -7,16 +7,15 @@
     <% end %>
   </div>
   <div class="info">
-    <p><i class="fa fa-map-marker" aria-hidden="true"></i> <%=@property.address %></p>
-    <p><%= @property.size %></p>
-    <p><%= @property.year %></p>
-    <p><i class="fa fa-bed" aria-hidden="true"></i> <%= @property.rooms %></p>
-    <p><i class="fa fa-usd" aria-hidden="true"></i> <%= @property.price %></p>
-    <p><%= @property.state%></p>
-    <p><%= @property.type_of_property%>
-    <p><%= link_to 'Delete' , property_path(property), method: :delete, class:"btn btn-light"%><p>
-  </div>
-  </div>
-      <%= link_to "Back to the list", properties_path %>
+    <p><i>Location:</i> <%=@property.address %></p>
+    <p><i>Size:</i>  <%= @property.size %></p>
+    <p><i>Construction year:</i>  <%= @property.year %></p>
+    <p><i>Number of rooms:</i>  <%= @property.rooms %></p>
+    <p><i>Rent:</i>  <%= @property.price %>€</p>
+    <p><i>State of property:</i>  <%= @property.state%></p>
+    <p><i>Type of property:</i> <%= @property.type_of_property%></p>
+    <hr>
+    <p><%= link_to 'Delete' , property_path(property), method: :delete, class:"btn btn-dark"%><p>
+    <div class="back-button"><i class="fa fa-undo" aria-hidden="true"></i> <%= link_to 'Back to properties', properties_path %></div>
   </div>
 </div>

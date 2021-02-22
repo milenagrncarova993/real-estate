@@ -1,14 +1,16 @@
 .list-group{
     display: flex;
-
+    flex-direction: row;
+    padding:50px;
+    margin-bottom:90px;
 }
 
 .picture{
     float:left;
     width:50%;
     img{
-        width:500px;
-        height:400px;
+        width:100%;
+        height:auto;
     }
 }
 
@@ -18,4 +20,8 @@
     padding: 30px;
     font-weight: bold;
     background: white;
+
+    i{
+        color:grey;
+    }
 }
