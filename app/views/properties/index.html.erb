@@ -15,29 +15,30 @@
       <div class="list-price">
         <p><%= property.price %></p>
       </div>
+    </div>
       <div class="property-content">
-        <h5>Villa in </h5>
-        <p class="location"><img src="icons/location.png" alt=""><%= property.address %></p>
-        <p>Integer nec bibendum lacus. Suspendisse dictum enim sit amet libero malesuada.</p>
+        <h5>Property in </h5>
+        <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> <%= property.address %></p>
+        <p>Characteristics of the property:</p>
         <div class="property-meta-data d-flex align-items-end justify-content-between">
           <div class="new-tag">
-            <img src="icons/new.png" alt="">
+            <i class="fa fa-file" aria-hidden="true"></i>
+            <span><%= property.size %></span>
           </div>
           <div class="bathroom">
-            <img src="icons/bathtub.png" alt="">
+            <i class="fa fa-bed" aria-hidden="true"></i>
             <span><%= property.rooms %></span>
           </div>
           <div class="garage">
-            <img src="icons/garage.png" alt="">
-            <span><%= property.rooms %></span>
+            <i class="fa fa-bookmark" aria-hidden="true"></i>
+            <span><%= property.state %></span>
           </div>
           <div class="space">
-            <img src="icons/space.png" alt="">
-            <span><%= property.size %></span>
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span><%= property.type_of_property %></span>
           </div>
         </div>
       </div>
-            </div>
       <% end %>
   </div>
 </div>
