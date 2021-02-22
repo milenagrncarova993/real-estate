@@ -2,11 +2,11 @@
 
 
   <div class="form-inputs mb-3">
-    <%= f.input :address %>
-    <%= f.input :size %>
-    <%= f.input :year %>
-    <%= f.input :rooms %>
-    <%= f.input :price %>
+    <%= f.input :address, placeholder: "i.e. Schlossstraße"%>
+    <%= f.input :size,  placeholder: "i.e. 100m2" %>
+    <%= f.input :year,placeholder: "i.e. 2000" %>
+    <%= f.input :rooms, placeholder: "i.e. 4" %>
+    <%= f.input :price, placeholder: "i.e. 1000" %>
     <%= f.input :state, as: :select, collection: Property::CATEGORY2 %>
     <%= f.input :type_of_property, as: :select, collection: Property::CATEGORY1 %>
   </div>
