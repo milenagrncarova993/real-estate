@@ -1,4 +1,4 @@
-.hallo{
+.new-container{
 
   align-items: center;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), image-url("background-new.jpg");
@@ -31,67 +31,15 @@
   }
 }
 
-.BackToClose {
-  position: relative;
-  width: 46px;
-  height: 6px;
-  margin: 32px 12px;
-  border-radius: 4px;
-  background: #fff;
-  animation: element $BackToClose-animationDuration $BackToClose-animationEasingFunction infinite alternate;
-  
-  &::before,
-  &::after {
-    display: block;
-    position: absolute;
-    width: 28px;
-    height: 6px;
-    border-radius: 4px;
-    background:black;
-    content: "";
-  }
-  
-  &::before {
-    top: -14px;
-    animation: before $BackToClose-animationDuration $BackToClose-animationEasingFunction infinite alternate;
-  }
-  
-  &::after {
-    bottom: -14px;
-    animation: after $BackToClose-animationDuration $BackToClose-animationEasingFunction infinite alternate;
-  }
+
+.back-button a {
+  text-decoration: none;
+  color:black;
+  margin-right:0px;
 }
 
-@keyframes element {
-  0%, 30% {
-    transform: rotate(0deg);
-  }
-  
-  70%, 100% {
-    transform: rotate(-45deg);
-  }
-}
+.inline{
+  display: flex;
+  // justify-content: space-between;
 
-@keyframes before {
-  0%, 30% {
-    width: 28px;
-    transform: rotate(-45deg) translateY(2px) translateX(-6px);
-  }
-  
-  70%, 100% {
-    width: 23px;
-    transform: rotate(-90deg) translateY(11px) translateX(-2px);
-  }
-}
-
-@keyframes after {
-  0%, 30% {
-    width: 28px;
-    transform: rotate(45deg) translateY(-2px) translateX(-6px);
-  }
-  
-  70%, 100% {
-    width: 23px;
-    transform: rotate(90deg) translateY(-11px) translateX(-2px);
-  }
 }

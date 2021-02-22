@@ -1,15 +1,15 @@
 
-<div class="hallo">
+<div class="new-container">
   <div class="row justify-content-center mr-0">
     <div class="col-6 form-col">
       <div class="form-new">
         <h1><strong>Offer your Home</strong></h1>
         <h4>
-        Let your possible renters know which kind of home you are offering by sharing the brand, location, price per day and the size. Don't forget your friendly description.</h3>
+        Let your possible renters know which kind of home you are offering by sharing the location,size, construction year, number of rooms, price , type and state of the property.Dont forget to add some beautiful pictures.</h3>
         </h4>
         <%= render 'form-new', property: @property %>
         <br>
-        <span><div class="BackToClose"></div><%= link_to 'Back to properties', properties_path %></span>
+        <div class="back-button"><i class="fa fa-undo" aria-hidden="true"></i> <%= link_to 'Back to properties', properties_path %></div>
       </div>
     </div>
   </div>
