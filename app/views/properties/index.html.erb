@@ -12,7 +12,10 @@
         <span>For Sale</span>
       </div>
       <div class="list-price">
-        <p><%= property.price %></p>
+        <p>€<%= property.price %></p>
+      </div>
+      <div class="list-view">
+        <%= link_to 'View' , property_path(property)%>
       </div>
     </div>
 
