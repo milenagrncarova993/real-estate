@@ -2,10 +2,13 @@ class PropertiesController < ApplicationController
 
   def index
     @properties = Property.all
+    @properties = Property.geocoded
     @markers = @properties.geocoded.map do |property|
       {
         lat: property.latitude,
-        lng: property.longitude
+        lng: property.longitude,
+        infoWindow: render_to_string(partial: "infowindow", locals: { property: property }),
+        image_url: helpers.asset_url('pickup.svg')
       }
     end
   end
