@@ -7,7 +7,7 @@ class PropertiesController < ApplicationController
       {
         lat: property.latitude,
         lng: property.longitude,
-        infoWindow: render_to_string(partial: "infowindow", locals: { property: property }),
+        infoWindow: render_to_string(partial: "info_window", locals: { property: property }),
         image_url: helpers.asset_url('pickup.svg')
       }
     end
