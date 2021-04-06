@@ -62,4 +62,5 @@ gem 'geocoder'
 #firebase
 gem 'firebase', '~> 0.2.6'
 
+#firebase auth
 gem 'fireauth'
