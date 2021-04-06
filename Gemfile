@@ -58,3 +58,8 @@ gem 'cloudinary', '~> 1.16.0'
 
 #geocoder
 gem 'geocoder'
+
+#firebase
+gem 'firebase', '~> 0.2.6'
+
+gem 'fireauth'
