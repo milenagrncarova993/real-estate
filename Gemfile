@@ -64,3 +64,6 @@ gem 'firebase', '~> 0.2.6'
 
 #firebase auth
 gem 'fireauth'
+
+#segment 
+gem 'analytics-ruby', '~> 2.0.0', :require => 'segment/analytics'
